@@ -1,12 +1,105 @@
-# React + Vite
+# Velvet Pour
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend practice project built with React, Vite, Tailwind CSS, and GSAP.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a single-page cocktail showcase created to practice responsive layout, animation, and visual storytelling in React. The UI is made up of section-based components with scroll-triggered motion, animated text, and media-heavy presentation.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Animated hero section with video scrubbing
+- Scroll-based GSAP reveals and parallax effects
+- Responsive layout built with Tailwind CSS v4
+- Sectioned landing page flow for cocktails, about, art, menu, and contact
+- Interactive cocktail slider with previous and next navigation
+- Static media experience using custom fonts, images, and video assets
+
+## Tech Stack
+
+- React 19
+- Vite 7
+- Tailwind CSS 4
+- GSAP and `@gsap/react`
+- `react-responsive`
+- ESLint 9
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ recommended
+- npm
+
+### Install
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+### Lint the project
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+.
+|- src/
+|  |- components/
+|  |- App.jsx
+|  |- main.jsx
+|  `- index.css
+|- constants/
+|- public/
+|  |- fonts/
+|  |- images/
+|  `- videos/
+|- index.html
+|- package.json
+`- vite.config.js
+```
+
+## Notes
+
+- This is a frontend-only practice project with no backend or API integration
+- No environment variables are currently required
+- No automated test setup is included yet
+- The visual experience depends on local image, font, and video assets in `public/`
+- The repository currently includes both `package-lock.json` and `bun.lock`, but the documented workflow here uses npm
+
+## Scripts
+
+- `npm run dev` - start the Vite dev server
+- `npm run build` - create a production build
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run ESLint
+
+## Practice Focus
+
+This project is most useful as a reference for:
+
+- Tailwind-based page composition
+- GSAP timeline and scroll-trigger patterns
+- Responsive React component structure
+- Media-rich landing page experimentation
